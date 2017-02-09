@@ -1,0 +1,90 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .body-content {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#wrapper-right {
+    background-color: #fff;
+    border-left: 1px solid #000;
+    bottom: 0;
+    height: 100%;
+    line-height: 50px;
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+    width: 50px;
+}
+
+#element-align-top-right {
+    top: 100px;
+    position: fixed;
+    transform: rotate(90deg);
+    transform-origin: right top 0;
+}
+
+#element-align-bottom-right {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: right top 0;
+}
+
+#wrapper-left {
+    background-color: #fff;
+    border-right: 1px solid #000;
+    bottom: 0;
+    height: 100%;
+    line-height: 50px;
+    position: fixed;
+    text-transform: uppercase;
+    width: 50px;
+}
+
+#element-align-top-left {
+    top: 150px;
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+#element-align-bottom-left {
+    bottom: 0;
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
